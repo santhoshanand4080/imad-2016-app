@@ -1,7 +1,6 @@
 console.log('Loaded!');
-var nd= document.getelementbyid("md");
+var nd= document.getelementById("md");
 nd.onclick  = function ()
 {
-  
-  alert("test");  
+    alert("test");  
 };
