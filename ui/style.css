@@ -72,3 +72,10 @@ ul
    height:60px; 
    clear:both;/* Height of the footer */
    }
+   th
+   {
+    text-align:center;    
+    font-size:10px;
+    
+   
+   }
