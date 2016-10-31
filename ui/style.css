@@ -20,3 +20,31 @@ body {
     height: 200px;
 }
 
+.container {
+    width: 100%;
+    background-image:url(https://s-media-cache-ak0.pinimg.com/236x/00/54/79/005479c1885cec027c1c23f66f3cd475.jpg);
+   }
+
+.header, .footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
