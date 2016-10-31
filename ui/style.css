@@ -57,6 +57,9 @@ img
 {
     float: right;
 }
+li{
+   list-style:square;
+}
 ul
 {
   margin-left:90px;
