@@ -69,5 +69,6 @@ ul
 .footer {
    bottom:0;
    width:10%;
-   height:60px;   /* Height of the footer */
+   height:60px; 
+   clear:both;/* Height of the footer */
    }
