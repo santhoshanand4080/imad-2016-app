@@ -105,8 +105,8 @@ ul
     text-align:left;
        }
    
-   hr
-   {
-       color:grey;
-   }
-   
+   hr {
+  border: 0;
+  width: 80%;
+  color:grey;
+}
