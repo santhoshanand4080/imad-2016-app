@@ -50,10 +50,15 @@ nav ul {
 nav ul a {
     text-decoration: none;
 }
-h1,h3
+h1
 {
  text-align: right;  
  margin-left:70px;
+}
+h3
+{
+    text-align:left;
+    margin-left:70px;
 }
 img
 {
