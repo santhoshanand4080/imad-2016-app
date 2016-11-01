@@ -87,9 +87,15 @@ ul
     margin-left:90px;
    }
    
-   td, th {
+   td {
        border: 1px solid transparent; /* No more visible border */
        transition: all 0.3s; /* Simple transition for hover effect */
        padding:2px;
    }
+   th
+   {
+    color:white;
+    font-size:20;
+    
+       }
    
