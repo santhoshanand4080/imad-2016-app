@@ -74,9 +74,10 @@ ul
 }
 .footer {
    bottom:0;
-   width:10%;
+   width:500%;
    height:60px; 
    clear:both;/* Height of the footer */
+   
    }
    th
    {
