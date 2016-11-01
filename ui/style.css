@@ -56,7 +56,10 @@ h1
  margin-left:70px;
  
 }
-
+h3
+{
+  margin-left:65px;    
+}
 img
 {
     float: right;
