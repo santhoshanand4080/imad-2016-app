@@ -28,7 +28,7 @@ var pg = new pg.Pool('config');
 var config = {
   user: 'santhoshanand4080', //env var: PGUSER
   database: 'santhoshanand4080', //env var: PGDATABASE
-  password:PROCESS.EMV.DB_PASSWORD, //env var: PGPASSWORD
+  password: process.env.DB_PASSWORD, //env var: PGPASSWORD
   host: 'db.imad.hasura-app.io', // Server hosting the postgres database
   port: 5432, //env var: PGPORT
   max: 10, // max number of clients in the pool
