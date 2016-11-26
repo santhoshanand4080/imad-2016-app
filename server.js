@@ -39,7 +39,7 @@ var config = {
 app.get('/santhoshanand4080', function(req,res)
 {
 
-pg.query(' select * from TBResume',function(req,res){
+pg.query(' select * from TBResume',function(err,result){
     
     if(err)
     {
