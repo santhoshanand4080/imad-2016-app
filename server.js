@@ -47,6 +47,7 @@ pg.query(' select * from TBResume',function(err,result){
     }
     else
     {
+        alert("in");
         res.send(Jason.stringify(result));
     }
     
