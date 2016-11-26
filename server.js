@@ -45,6 +45,12 @@ pg.query(' select * from TBResume',function(req,res){
     {
         res.status(500).send(err.tostring);
     }
+    else
+    {
+        res.send(Jason.stringify(result));
+    }
+    
+    }
     }
 }
 })
