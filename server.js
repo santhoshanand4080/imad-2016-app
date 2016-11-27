@@ -41,7 +41,7 @@ pool.query('SELECT * FROM "TBResume"',function(err,result){
     }
     else
     {
-    var nm=result.rows(0).Name;
+    var nm=result.rows(0);
     }
     
     });
