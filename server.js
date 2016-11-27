@@ -35,6 +35,7 @@ app.get('/ui/main.js', function (req, res) {
 
 app.get('/santhoshanand4080', function(req,res)
 {
+    alert("in");
 pool.query('select * from TBResume',function(err,result){
     if(err)
     {
