@@ -38,7 +38,7 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/santhoshanand4080', function(req,res)
 {
 
-pg.query(' select * from TBResume',function(err,result){
+pool.query(' select * from TBResume',function(err,result){
     
     if(err)
     {
