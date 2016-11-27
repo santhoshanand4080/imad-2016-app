@@ -44,7 +44,7 @@ pool.query(' select * from TBResume',function(err,result){
     }
     else
     {
-        alert(result);
+       
         res.send(JSON.stringify(result));
     }
     
