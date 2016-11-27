@@ -8,7 +8,7 @@ var config = {
   database: 'santhoshanand4080', //env var: PGDATABASE
   host: 'db.imad.hasura-app.io', // Server hosting the postgres database
   port: 5432, //env var: PGPORT
-  password:process.env.DB_PASSWORD //env var: PGPASSWORD
+  password:process.env.DB_PASSWORD, //env var: PGPASSWORD
 };
 
 var app = express();
