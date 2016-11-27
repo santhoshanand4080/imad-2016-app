@@ -10,7 +10,7 @@ var config = {
   port: 5432, //env var: PGPORT
   password:process.env.DB_PASSWORD //env var: PGPASSWORD
 };
-var pool = new Pool(config);
+
 var app = express();
 app.use(morgan('combined'));
 
@@ -30,7 +30,7 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-
+var pool = new Pool(config);
 app.get('/santhoshanand4080', function(req,res)
 {
 pool.query('select * from TBResume',function(err,result){
