@@ -1,7 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var Pool= require('pg').Pool;
+var Pool = require('pg').Pool;
 
 var config = {
   user: 'santhoshanand4080', //env var: PGUSER
@@ -13,7 +13,7 @@ var config = {
   idleTimeoutMillis: 30000, // how long a client is allowed to remain idle before being closed
 };
 
-var Pool = new Pool(config);
+var pool = new Pool(config)
 
 var app = express();
 app.use(morgan('combined'));
@@ -37,7 +37,7 @@ app.get('/ui/main.js', function (req, res) {
 
 app.get('/santhoshanand4080', function(req,res)
 {
-Pool.query('select * from TBResume',function(err,result){
+pool.query('select * from TBResume',function(err,result){
     if(err)
     {
         res.status(500).send(err.tostring());
