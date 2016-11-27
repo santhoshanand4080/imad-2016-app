@@ -40,7 +40,7 @@ app.get('/santhoshanand4080', function(req,res)
 pool.query('select * from TBResume',function(err,result){
     if(err)
     {
-        res.status(500).send(err.tostring());
+        res.status(500).send(err);
     }
     else
     {
