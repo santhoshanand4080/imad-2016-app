@@ -9,7 +9,6 @@ var config = {
   host: 'db.imad.hasura-app.io', // Server hosting the postgres database
   port: 5432, //env var: PGPORT
   password:process.env.DB_PASSWORD //env var: PGPASSWORD
-
 };
 var pool = new Pool(config);
 var app = express();
@@ -37,7 +36,7 @@ app.get('/santhoshanand4080', function(req,res)
 pool.query('select * from TBResume',function(err,result){
     if(err)
     {
-        //res.status(500).send(err);
+        res.status(500).send(err);
     }
     else
     {
