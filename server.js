@@ -4,12 +4,13 @@ var path = require('path');
 var Pool = require('pg').Pool;
 
 var config = {
-  user: 'santhoshanand4080', //env var: PGUSER
-  database: 'santhoshanand4080', //env var: PGDATABASE
-  host: 'db.imad.hasura-app.io', // Server hosting the postgres database
-  port: 5432, //env var: PGPORT
-  password:process.env.DB_PASSWORD, //env var: PGPASSWORD
+  host: 'db.imad.hasura-app.io',
+  port: '5432',
+  user: ' santhoshanand4080',
+  password: process.env.DB_PASSWORD,
+  database: ' santhoshanand4080'
 };
+
 
 var app = express();
 app.use(morgan('combined'));
