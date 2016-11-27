@@ -13,7 +13,7 @@ var config = {
   idleTimeoutMillis: 30000, // how long a client is allowed to remain idle before being closed
 };
 
-var pool = new Pool(config);
+var Pool = new Pool(config);
 
 var app = express();
 app.use(morgan('combined'));
