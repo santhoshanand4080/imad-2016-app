@@ -1,8 +1,19 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var pg= require('pg');
+var Pool= require('pg').Pool;
 
+var config = {
+  user: 'santhoshanand4080', //env var: PGUSER
+  database: 'santhoshanand4080', //env var: PGDATABASE
+  password: process.env.DB_PASSWORD, //env var: PGPASSWORD
+  host: 'db.imad.hasura-app.io', // Server hosting the postgres database
+  port: 5432, //env var: PGPORT
+  max: 10, // max number of clients in the pool
+  idleTimeoutMillis: 30000, // how long a client is allowed to remain idle before being closed
+};
+
+var pool = new Pool('config');
 
 var app = express();
 app.use(morgan('combined'));
@@ -22,18 +33,6 @@ app.get('/ui/madi.png', function (req, res) {
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-
-var pg = new pg.Pool('config');
-
-var config = {
-  user: 'santhoshanand4080', //env var: PGUSER
-  database: 'santhoshanand4080', //env var: PGDATABASE
-  password: process.env.DB_PASSWORD, //env var: PGPASSWORD
-  host: 'db.imad.hasura-app.io', // Server hosting the postgres database
-  port: 5432, //env var: PGPORT
-  max: 10, // max number of clients in the pool
-  idleTimeoutMillis: 30000, // how long a client is allowed to remain idle before being closed
-};
 
 
 app.get('/santhoshanand4080', function(req,res)
