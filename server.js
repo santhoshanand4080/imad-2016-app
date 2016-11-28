@@ -10,8 +10,6 @@ var config = {
   password: process.env.DB_PASSWORD,
   database: 'santhoshanand4080'
 };
-
-
 var app = express();
 app.use(morgan('combined'));
 
@@ -30,9 +28,7 @@ app.get('/ui/madi.png', function (req, res) {
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-
 var pool = new Pool(config);
-
 app.get('/santhoshanand4080', function(req,res)
 {
 pool.query('SELECT * FROM "TBResume"',function(err,result){
@@ -53,10 +49,9 @@ app.listen(8080, function () {
 });
 
 var article= {
-    
     'article-one':{
      title:'Article One Santhosh anand',
      heading: 'Article 1',
      date:'Sep 5, 2016',
-     content:'<table><tr><td>Organisation:;</td><td>$(Name)</td> </tr><tr><td>Current Profile :</td><td></td></tr><tr><td>Experience :</td><td></td></tr> <tr><td>Interests :</td> <td></td></tr></table>'                        }
+     content:'<table><tr><td>Organisation:;</td><td>$(Name)</td> </tr><tr><td>Current Profile :</td><td></td></tr><tr><td>Experience :</td><td></td></tr> <tr><td>Interests :</td> <td></td></tr></table>'     }
     }
