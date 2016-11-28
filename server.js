@@ -51,3 +51,12 @@ var port = 8080; // Use 8080 for local development because you might already hav
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
+
+var article= {
+    
+    'article-one':{
+     title:'Article One Santhosh anand',
+     heading: 'Article 1',
+     date:'Sep 5, 2016',
+     content:'<table><tr><td>Organisation:;</td><td>$(Name)</td> </tr><tr><td>Current Profile :</td><td></td></tr><tr><td>Experience :</td><td></td></tr> <tr><td>Interests :</td> <td></td></tr></table>'                        }
+    }
