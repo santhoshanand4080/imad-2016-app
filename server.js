@@ -42,10 +42,8 @@ pool.query('SELECT * FROM "TBResume"',function(err,result){
     }
     else
     {
-    return JSON.stringify(result.rows);
-    
+    res,send(JSON.stringify(result.rows));
     }
-    
     });
 });
 
