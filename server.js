@@ -32,6 +32,7 @@ app.get('/ui/main.js', function (req, res) {
 });
 
 var pool = new Pool(config);
+
 app.get('/santhoshanand4080', function(req,res)
 {
 pool.query('SELECT * FROM "TBResume"',function(err,result){
